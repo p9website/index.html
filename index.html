@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P9 Hub • Join the Community</title>
+  <title>P9 • Streetz War 2 Hood Gang</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
   <style>
@@ -13,7 +13,7 @@
     .title-font { font-family: 'Space Grotesk', sans-serif; }
     
     .hero-bg {
-      background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 60%, #2a1b3d 100%);
     }
     
     .modal {
@@ -21,59 +21,71 @@
     }
     
     @keyframes modalPop {
-      from { opacity: 0; transform: scale(0.7) translateY(50px); }
+      from { opacity: 0; transform: scale(0.75) translateY(40px); }
       to { opacity: 1; transform: scale(1) translateY(0); }
     }
     
     .glass {
-      background: rgba(255, 255, 255, 0.06);
-      backdrop-filter: blur(24px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(20, 20, 30, 0.92);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(165, 243, 252, 0.15);
     }
+    
+    .neon-cyan { text-shadow: 0 0 20px #67e8f9; }
   </style>
 </head>
 <body class="bg-zinc-950 text-zinc-100">
 
   <!-- Top Navigation -->
-  <nav class="fixed top-0 w-full z-50 bg-zinc-900/80 backdrop-blur-lg border-b border-zinc-800">
+  <nav class="fixed top-0 w-full z-50 bg-zinc-900/90 backdrop-blur-xl border-b border-cyan-500/20">
     <div class="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
       <div class="flex items-center gap-4">
-        <div class="w-11 h-11 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-2xl flex items-center justify-center text-3xl font-bold">P9</div>
-        <h1 class="title-font text-4xl font-semibold tracking-tighter">P9 Hub</h1>
+        <div class="w-12 h-12 bg-gradient-to-br from-cyan-400 via-purple-500 to-pink-500 rounded-2xl flex items-center justify-center text-4xl font-black tracking-tighter">P9</div>
+        <h1 class="title-font text-4xl font-bold tracking-tighter neon-cyan">P9 HOOD</h1>
       </div>
 
-      <div class="hidden md:flex items-center gap-10 text-lg">
+      <div class="hidden md:flex items-center gap-10 text-lg font-medium">
         <a href="#" onclick="showModal('en')" class="hover:text-cyan-400 transition">Join English</a>
         <a href="#" onclick="showModal('fr')" class="hover:text-cyan-400 transition">Rejoindre Français</a>
         <a href="#" onclick="showModal('discover')" class="hover:text-cyan-400 transition">Discover</a>
-        <a href="#" onclick="showModal('report')" class="hover:text-rose-400 transition">Report</a>
+        <a href="#" onclick="showModal('report')" class="hover:text-rose-400 transition">Report Member</a>
       </div>
 
       <button onclick="showModal('en')" 
-              class="px-8 py-3.5 bg-white text-black font-semibold rounded-3xl hover:bg-cyan-400 hover:text-black transition">
-        Join Now
+              class="px-9 py-4 bg-white text-black font-bold rounded-3xl hover:bg-cyan-400 transition text-lg">
+        Join the Gang
       </button>
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero-bg min-h-screen flex items-center pt-20">
     <div class="max-w-5xl mx-auto px-6 text-center">
-      <h1 class="title-font text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-8">
-        Welcome to <span class="bg-gradient-to-r from-cyan-300 to-purple-300 bg-clip-text text-transparent">P9</span>
+      <div class="inline-flex items-center gap-3 bg-zinc-900 px-8 py-3 rounded-3xl mb-10 border border-cyan-400/30">
+        <span class="text-cyan-400 font-bold tracking-[3px] text-sm">STREETZ WAR 2 • ROBLOX HOOD GANG</span>
+      </div>
+
+      <h1 class="title-font text-7xl md:text-8xl font-black tracking-tighter leading-none mb-6">
+        P9 HOOD
       </h1>
-      <p class="text-3xl text-zinc-400 max-w-2xl mx-auto mb-16">
-        The community for real connection in Guadeloupe
+      
+      <p class="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-purple-300 mb-6">
+        Owner: Len Kossdi Kozay
+      </p>
+
+      <p class="text-2xl text-zinc-400 max-w-2xl mx-auto mb-16">
+        The realest hood gang in Streetz War 2.<br>
+        Loyalty • Respect • Streetz Energy
       </p>
 
       <div class="flex flex-col sm:flex-row gap-6 justify-center">
         <button onclick="showModal('en')" 
-                class="px-14 py-7 bg-gradient-to-r from-cyan-400 to-cyan-500 text-black font-bold text-2xl rounded-3xl hover:scale-105 transition-all shadow-xl shadow-cyan-500/30">
+                class="px-16 py-7 bg-gradient-to-r from-cyan-400 to-cyan-500 text-black font-bold text-2xl rounded-3xl hover:scale-105 transition-all shadow-2xl shadow-cyan-500/40">
           Join P9 - English
         </button>
         
         <button onclick="showModal('fr')" 
-                class="px-14 py-7 border-2 border-white/70 hover:border-white font-bold text-2xl rounded-3xl hover:bg-white/10 transition-all">
+                class="px-16 py-7 border-2 border-white/80 hover:border-white font-bold text-2xl rounded-3xl hover:bg-white/10 transition-all">
           Rejoindre P9 - Français
         </button>
       </div>
@@ -81,116 +93,108 @@
   </section>
 
   <!-- Modals -->
-  <div id="modal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-[100] p-4">
-    <div id="modal-content" class="glass w-full max-w-2xl rounded-3xl p-10 md:p-14 relative max-h-[90vh] overflow-auto">
-      <button onclick="closeModal()" class="absolute top-6 right-6 text-3xl text-zinc-400 hover:text-white">×</button>
+  <div id="modal" class="hidden fixed inset-0 bg-black/90 flex items-center justify-center z-[100] p-4">
+    <div id="modal-content" class="glass w-full max-w-2xl rounded-3xl p-10 md:p-14 relative max-h-[92vh] overflow-auto">
+      <button onclick="closeModal()" class="absolute top-6 right-6 text-4xl text-zinc-400 hover:text-white transition">×</button>
       
-      <!-- English Join Form -->
+      <!-- English Join -->
       <div id="modal-en" class="modal-content hidden">
-        <h2 class="title-font text-5xl font-bold mb-2">Join P9</h2>
-        <p class="text-zinc-400 mb-10">English Application</p>
+        <h2 class="title-font text-5xl font-bold mb-3">Join P9 Hood</h2>
+        <p class="text-zinc-400 mb-10">English Application • Streetz War 2</p>
         <form id="form-en" class="space-y-8">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label class="block text-sm mb-2 text-zinc-400">Full Name</label>
+              <label class="block text-sm mb-2 text-zinc-400">Roblox Username</label>
               <input type="text" required class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
             </div>
             <div>
-              <label class="block text-sm mb-2 text-zinc-400">Email</label>
-              <input type="email" required class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
+              <label class="block text-sm mb-2 text-zinc-400">Discord (optional)</label>
+              <input type="text" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
             </div>
-          </div>
-          <div>
-            <label class="block text-sm mb-2 text-zinc-400">Phone</label>
-            <input type="tel" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
           </div>
           <div>
             <label class="block text-sm mb-2 text-zinc-400">Why do you want to join P9?</label>
             <textarea rows="5" class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-6 py-5 focus:border-cyan-400 outline-none"></textarea>
           </div>
-          <button type="submit" class="w-full py-6 bg-cyan-500 hover:bg-cyan-400 text-black font-bold text-xl rounded-3xl transition">Submit Application</button>
+          <button type="submit" class="w-full py-7 bg-cyan-500 hover:bg-cyan-400 text-black font-bold text-xl rounded-3xl transition">Submit Application</button>
         </form>
       </div>
 
-      <!-- French Join Form -->
+      <!-- French Join -->
       <div id="modal-fr" class="modal-content hidden">
-        <h2 class="title-font text-5xl font-bold mb-2">Rejoindre P9</h2>
-        <p class="text-zinc-400 mb-10">Formulaire en Français</p>
+        <h2 class="title-font text-5xl font-bold mb-3">Rejoindre P9 Hood</h2>
+        <p class="text-zinc-400 mb-10">Formulaire Français • Streetz War 2</p>
         <form id="form-fr" class="space-y-8">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label class="block text-sm mb-2 text-zinc-400">Nom complet</label>
+              <label class="block text-sm mb-2 text-zinc-400">Nom Roblox</label>
               <input type="text" required class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
             </div>
             <div>
-              <label class="block text-sm mb-2 text-zinc-400">Email</label>
-              <input type="email" required class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
+              <label class="block text-sm mb-2 text-zinc-400">Discord (optionnel)</label>
+              <input type="text" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
             </div>
           </div>
           <div>
-            <label class="block text-sm mb-2 text-zinc-400">Téléphone</label>
-            <input type="tel" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
-          </div>
-          <div>
-            <label class="block text-sm mb-2 text-zinc-400">Pourquoi voulez-vous rejoindre P9 ?</label>
+            <label class="block text-sm mb-2 text-zinc-400">Pourquoi veux-tu rejoindre P9 ?</label>
             <textarea rows="5" class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-6 py-5 focus:border-cyan-400 outline-none"></textarea>
           </div>
-          <button type="submit" class="w-full py-6 bg-cyan-500 hover:bg-cyan-400 text-black font-bold text-xl rounded-3xl transition">Envoyer ma candidature</button>
+          <button type="submit" class="w-full py-7 bg-cyan-500 hover:bg-cyan-400 text-black font-bold text-xl rounded-3xl transition">Envoyer ma candidature</button>
         </form>
       </div>
 
-      <!-- Report Form -->
+      <!-- Report -->
       <div id="modal-report" class="modal-content hidden">
-        <h2 class="title-font text-5xl font-bold mb-2 text-rose-400">Report a Member / Staff</h2>
-        <p class="text-zinc-400 mb-10">All reports are 100% confidential</p>
+        <h2 class="title-font text-5xl font-bold mb-3 text-rose-400">Report a Member</h2>
+        <p class="text-zinc-400 mb-10">Confidential • Hood Code</p>
         <form id="form-report" class="space-y-8">
           <div>
-            <label class="block text-sm mb-2 text-zinc-400">Your Name (optional)</label>
+            <label class="block text-sm mb-2 text-zinc-400">Your Roblox Username (optional)</label>
             <input type="text" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-rose-400 outline-none">
           </div>
           <div>
             <label class="block text-sm mb-2 text-zinc-400">Who are you reporting?</label>
-            <input type="text" required class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-rose-400 outline-none">
+            <input type="text" required placeholder="Username" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-rose-400 outline-none">
           </div>
           <div>
             <label class="block text-sm mb-2 text-zinc-400">Reason</label>
             <select class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-rose-400 outline-none">
-              <option>Inappropriate behavior</option>
-              <option>Breaking rules</option>
+              <option>Toxicity / Snitching</option>
+              <option>Disrespect to the gang</option>
               <option>Other</option>
             </select>
           </div>
           <div>
-            <label class="block text-sm mb-2 text-zinc-400">Description</label>
+            <label class="block text-sm mb-2 text-zinc-400">What happened?</label>
             <textarea rows="6" required class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-6 py-5 focus:border-rose-400 outline-none"></textarea>
           </div>
-          <button type="submit" class="w-full py-6 bg-rose-600 hover:bg-rose-500 font-bold text-xl rounded-3xl transition">Submit Confidential Report</button>
+          <button type="submit" class="w-full py-7 bg-rose-600 hover:bg-rose-500 font-bold text-xl rounded-3xl transition">Submit Report</button>
         </form>
       </div>
 
-      <!-- Discover Content -->
+      <!-- Discover -->
       <div id="modal-discover" class="modal-content hidden">
-        <h2 class="title-font text-5xl font-bold mb-8">Discover P9</h2>
-        <div class="space-y-8 text-left">
+        <h2 class="title-font text-5xl font-bold mb-8">Discover P9 Hood</h2>
+        <div class="space-y-10 text-left">
           <div class="flex gap-6">
-            <i class="fas fa-users text-4xl text-cyan-400 mt-1"></i>
+            <i class="fas fa-skull text-5xl text-cyan-400"></i>
             <div>
-              <h3 class="text-2xl font-semibold">Strong Community</h3>
-              <p class="text-zinc-400">Connect with people from Capesterre-Belle-Eau and all Guadeloupe.</p>
+              <h3 class="text-3xl font-bold">Loyalty First</h3>
+              <p class="text-zinc-400">We ride together in Streetz War 2.</p>
             </div>
           </div>
           <div class="flex gap-6">
-            <i class="fas fa-calendar text-4xl text-purple-400 mt-1"></i>
+            <i class="fas fa-fire text-5xl text-orange-400"></i>
             <div>
-              <h3 class="text-2xl font-semibold">Events & Activities</h3>
-              <p class="text-zinc-400">Regular meetups, workshops, and good vibes.</p>
+              <h3 class="text-3xl font-bold">Streetz Wars</h3>
+              <p class="text-zinc-400">Take over blocks, defend territory, build the empire.</p>
             </div>
           </div>
           <div class="flex gap-6">
-            <i class="fas fa-shield-alt text-4xl text-emerald-400 mt-1"></i>
+            <i class="fas fa-handshake text-5xl text-emerald-400"></i>
             <div>
-              <h3 class="text-2xl font-semibold">Safe & Respectful</h3>
-              <p class="text-zinc-400">We take reports seriously to keep the space positive.</p>
+              <h3 class="text-3xl font-bold">Real Respect</h3>
+              <p class="text-zinc-400">No snitching. No fakes. Only real ones.</p>
             </div>
           </div>
         </div>
@@ -199,18 +203,16 @@
   </div>
 
   <!-- Footer -->
-  <footer class="bg-black py-12 text-center text-zinc-500">
-    <p>© 2026 P9 Hub • Capesterre-Belle-Eau, Guadeloupe</p>
+  <footer class="bg-black py-12 text-center text-zinc-500 border-t border-zinc-900">
+    <p>© 2026 P9 Hood • Roblox Streetz War 2 Gang • Owned by Len Kossdi Kozay</p>
   </footer>
 
   <script>
     const modal = document.getElementById('modal');
 
     function showModal(type) {
-      // Hide all modal contents
       document.querySelectorAll('.modal-content').forEach(el => el.classList.add('hidden'));
       
-      // Show the right one
       if (type === 'en') document.getElementById('modal-en').classList.remove('hidden');
       if (type === 'fr') document.getElementById('modal-fr').classList.remove('hidden');
       if (type === 'report') document.getElementById('modal-report').classList.remove('hidden');
@@ -225,23 +227,20 @@
       modal.classList.remove('flex');
     }
 
-    // Close modal when clicking outside
-    modal.addEventListener('click', function(e) {
+    modal.addEventListener('click', (e) => {
       if (e.target === modal) closeModal();
     });
 
-    // Form submissions
     document.querySelectorAll('form').forEach(form => {
-      form.addEventListener('submit', function(e) {
+      form.addEventListener('submit', (e) => {
         e.preventDefault();
-        alert("✅ Thank you! Your submission has been received.");
+        alert("✅ Application / Report received. Welcome to the hood!");
         form.reset();
         closeModal();
       });
     });
 
-    // Keyboard escape support
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', (e) => {
       if (e.key === "Escape") closeModal();
     });
   </script>
