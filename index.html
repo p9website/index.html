@@ -3,272 +3,226 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P9 Hub • Join the Movement</title>
+  <title>P9 Hub • Streetz Energy</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
     
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-    }
-    .title-font {
-      font-family: 'Space Grotesk', sans-serif;
-    }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .title-font { font-family: 'Space Grotesk', sans-serif; }
     .hero-bg {
-      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+      background: linear-gradient(135deg, #0a0a0a 0%, #0f172a 50%, #1e3a8a 100%);
     }
     .glass {
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(15, 23, 42, 0.85);
       backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(34, 211, 238, 0.2);
     }
-    .nav-link {
-      position: relative;
-      transition: all 0.3s ease;
-    }
-    .nav-link:after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 3px;
-      bottom: -4px;
-      left: 0;
-      background: linear-gradient(to right, #22d3ee, #a855f7);
-      transition: width 0.4s ease;
-    }
-    .nav-link:hover:after {
-      width: 100%;
-    }
-    .btn-modern {
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    .blue-neon { color: #22d3ee; text-shadow: 0 0 15px #22d3ee; }
     .btn-modern:hover {
-      transform: translateY(-4px) scale(1.03);
-      box-shadow: 0 20px 25px -5px rgb(34 211 238 / 0.3);
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px rgba(34, 211, 238, 0.5);
     }
   </style>
 </head>
-<body class="bg-zinc-950 text-zinc-100 overflow-x-hidden">
+<body class="bg-zinc-950 text-zinc-100">
 
-  <!-- Top Navigation Bar -->
-  <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10">
+  <!-- Top Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-cyan-500/30">
     <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
       <div class="flex items-center gap-4">
-        <div class="w-11 h-11 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-2xl flex items-center justify-center text-3xl font-bold shadow-lg">P9</div>
-        <div>
-          <h1 class="title-font text-3xl font-semibold tracking-tighter">P9 Hub</h1>
-          <p class="text-[10px] text-zinc-500 -mt-1">COMMUNITY • GUADÉLOUPE</p>
-        </div>
+        <div class="w-12 h-12 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-2xl flex items-center justify-center text-4xl font-bold shadow-xl">P9</div>
+        <h1 class="title-font text-4xl font-bold tracking-tighter blue-neon">P9 HUB</h1>
       </div>
 
       <div class="hidden md:flex items-center gap-10 text-lg font-medium">
-        <a href="#join-en" class="nav-link">P9 Join English</a>
-        <a href="#join-fr" class="nav-link">P9 Join Français</a>
-        <a href="#discover" class="nav-link">Discover P9</a>
-        <a href="#report" class="nav-link text-rose-400">Report Member/Staff</a>
+        <a href="#join-en" class="hover:text-cyan-400 transition">P9 Join English</a>
+        <a href="#join-fr" class="hover:text-cyan-400 transition">P9 Join Français</a>
+        <a href="#discover" class="hover:text-cyan-400 transition">Discover</a>
+        <a href="#report" class="hover:text-rose-400 transition">Report Staff/Member</a>
       </div>
 
-      <a href="#join-en" 
-         class="hidden sm:block px-8 py-3.5 bg-white text-black font-semibold rounded-3xl hover:bg-cyan-400 hover:text-black btn-modern">
-        Join Now
-      </a>
+      <a href="#join-en" class="px-8 py-3 bg-cyan-500 text-black font-bold rounded-3xl hover:bg-cyan-400 transition">Join Now</a>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero-bg min-h-screen flex items-center pt-20">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <div class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md px-6 py-2 rounded-full mb-8 border border-white/20">
-        <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-        <span class="text-sm font-medium tracking-widest">NOW OPEN FOR NEW MEMBERS</span>
+      <div class="inline-flex items-center gap-3 bg-cyan-900/50 px-8 py-3 rounded-full mb-8 border border-cyan-400/30">
+        <span class="text-cyan-400 text-sm font-bold tracking-widest">STREETZ ENERGY • GUADÉLOUPE</span>
       </div>
 
-      <h1 class="title-font text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-8">
-        Welcome to <span class="bg-gradient-to-r from-cyan-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">P9</span>
+      <h1 class="title-font text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
+        P9 <span class="blue-neon">STREETZ</span>
       </h1>
-      
-      <p class="max-w-2xl mx-auto text-2xl md:text-3xl text-zinc-400 mb-16 leading-tight">
-        Connect • Grow • Belong<br>
-        <span class="text-zinc-500">Rejoignez la communauté la plus dynamique de Guadeloupe</span>
+      <p class="text-3xl text-zinc-300 max-w-3xl mx-auto mb-12">
+        Join the movement • Rejoignez la rue<br>
+        <span class="text-cyan-400">Capesterre-Belle-Eau vibes</span>
       </p>
 
-      <!-- Big Dual Buttons -->
-      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+      <div class="flex flex-col sm:flex-row gap-8 justify-center">
         <a href="#join-en" 
-           class="group w-full sm:w-auto px-12 py-7 bg-gradient-to-r from-cyan-400 to-cyan-500 text-black font-bold text-2xl rounded-3xl flex items-center justify-center gap-4 btn-modern shadow-2xl shadow-cyan-500/40">
-          <span>Join P9 - English</span>
-          <i class="fas fa-arrow-right group-hover:translate-x-2 transition"></i>
+           class="group px-14 py-7 bg-cyan-500 text-black font-bold text-2xl rounded-3xl flex items-center justify-center gap-4 btn-modern">
+          Join P9 - English
+          <i class="fas fa-arrow-down group-hover:translate-y-1 transition"></i>
         </a>
 
         <a href="#join-fr" 
-           class="group w-full sm:w-auto px-12 py-7 border-2 border-white/80 hover:border-white font-bold text-2xl rounded-3xl flex items-center justify-center gap-4 btn-modern hover:bg-white/10">
-          <span>Rejoindre P9 - Français</span>
-          <i class="fas fa-arrow-right group-hover:translate-x-2 transition"></i>
+           class="group px-14 py-7 border-2 border-cyan-400 text-cyan-400 font-bold text-2xl rounded-3xl flex items-center justify-center gap-4 hover:bg-cyan-400 hover:text-black btn-modern">
+          Rejoindre P9 - Français
+          <i class="fas fa-arrow-down group-hover:translate-y-1 transition"></i>
         </a>
-      </div>
-
-      <div class="mt-16 text-zinc-500 text-sm flex items-center justify-center gap-8">
-        <div>🇬🇵 Guadeloupe Based</div>
-        <div>•</div>
-        <div>100% Confidential Reports</div>
       </div>
     </div>
   </section>
 
-  <!-- Join English -->
+  <!-- Join English Application -->
   <section id="join-en" class="py-28 bg-zinc-900">
     <div class="max-w-3xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-5xl font-bold title-font tracking-tight mb-4">P9 Join • English</h2>
-        <p class="text-xl text-zinc-400">Fill the form below to become a member</p>
+      <div class="text-center mb-12">
+        <h2 class="title-font text-6xl font-bold tracking-tight blue-neon">P9 JOIN • ENGLISH</h2>
+        <p class="text-xl text-zinc-400 mt-4">Application Form</p>
       </div>
       <div class="glass rounded-3xl p-12">
         <form id="form-en" class="space-y-8">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label class="block text-sm text-zinc-400 mb-2">Full Name</label>
-              <input type="text" required class="w-full bg-zinc-950 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
+              <label class="block text-sm text-cyan-300 mb-2">Full Name</label>
+              <input type="text" required class="w-full bg-zinc-950 border border-cyan-800 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
             </div>
             <div>
-              <label class="block text-sm text-zinc-400 mb-2">Email Address</label>
-              <input type="email" required class="w-full bg-zinc-950 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
+              <label class="block text-sm text-cyan-300 mb-2">Email</label>
+              <input type="email" required class="w-full bg-zinc-950 border border-cyan-800 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
             </div>
           </div>
           <div>
-            <label class="block text-sm text-zinc-400 mb-2">Phone Number</label>
-            <input type="tel" class="w-full bg-zinc-950 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
+            <label class="block text-sm text-cyan-300 mb-2">Phone</label>
+            <input type="tel" class="w-full bg-zinc-950 border border-cyan-800 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
           </div>
           <div>
-            <label class="block text-sm text-zinc-400 mb-2">Why do you want to join P9?</label>
-            <textarea rows="5" class="w-full bg-zinc-950 border border-zinc-700 rounded-3xl px-6 py-5 focus:border-cyan-400 outline-none resize-y"></textarea>
+            <label class="block text-sm text-cyan-300 mb-2">Why do you want to join P9?</label>
+            <textarea rows="5" class="w-full bg-zinc-950 border border-cyan-800 rounded-3xl px-6 py-5 focus:border-cyan-400 outline-none"></textarea>
           </div>
-          <button type="submit" class="w-full py-6 bg-gradient-to-r from-cyan-400 to-purple-500 text-black font-bold text-xl rounded-3xl hover:brightness-110 transition">Submit My Application</button>
+          <button type="submit" class="w-full py-7 bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-bold text-2xl rounded-3xl hover:brightness-110 transition">Submit Application</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- Join French -->
-  <section id="join-fr" class="py-28 bg-black">
+  <!-- Join French Application -->
+  <section id="join-fr" class="py-28 bg-zinc-950">
     <div class="max-w-3xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-5xl font-bold title-font tracking-tight mb-4">P9 Rejoindre • Français</h2>
-        <p class="text-xl text-zinc-400">Remplissez le formulaire pour devenir membre</p>
+      <div class="text-center mb-12">
+        <h2 class="title-font text-6xl font-bold tracking-tight blue-neon">P9 REJOINDRE • FRANÇAIS</h2>
+        <p class="text-xl text-zinc-400 mt-4">Formulaire de candidature</p>
       </div>
       <div class="glass rounded-3xl p-12">
         <form id="form-fr" class="space-y-8">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label class="block text-sm text-zinc-400 mb-2">Nom complet</label>
-              <input type="text" required class="w-full bg-zinc-950 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
+              <label class="block text-sm text-cyan-300 mb-2">Nom complet</label>
+              <input type="text" required class="w-full bg-zinc-950 border border-cyan-800 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
             </div>
             <div>
-              <label class="block text-sm text-zinc-400 mb-2">Adresse email</label>
-              <input type="email" required class="w-full bg-zinc-950 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
+              <label class="block text-sm text-cyan-300 mb-2">Email</label>
+              <input type="email" required class="w-full bg-zinc-950 border border-cyan-800 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
             </div>
           </div>
           <div>
-            <label class="block text-sm text-zinc-400 mb-2">Numéro de téléphone</label>
-            <input type="tel" class="w-full bg-zinc-950 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
+            <label class="block text-sm text-cyan-300 mb-2">Téléphone</label>
+            <input type="tel" class="w-full bg-zinc-950 border border-cyan-800 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
           </div>
           <div>
-            <label class="block text-sm text-zinc-400 mb-2">Pourquoi voulez-vous rejoindre P9 ?</label>
-            <textarea rows="5" class="w-full bg-zinc-950 border border-zinc-700 rounded-3xl px-6 py-5 focus:border-cyan-400 outline-none resize-y"></textarea>
+            <label class="block text-sm text-cyan-300 mb-2">Pourquoi voulez-vous rejoindre P9 ?</label>
+            <textarea rows="5" class="w-full bg-zinc-950 border border-cyan-800 rounded-3xl px-6 py-5 focus:border-cyan-400 outline-none"></textarea>
           </div>
-          <button type="submit" class="w-full py-6 bg-gradient-to-r from-cyan-400 to-purple-500 text-black font-bold text-xl rounded-3xl hover:brightness-110 transition">Envoyer ma candidature</button>
+          <button type="submit" class="w-full py-7 bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-bold text-2xl rounded-3xl hover:brightness-110 transition">Envoyer la candidature</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- Discover Section -->
+  <!-- Discover -->
   <section id="discover" class="py-28 bg-zinc-900">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-5xl font-bold title-font tracking-tight">Discover P9</h2>
-        <p class="text-zinc-400 mt-4 text-xl">What makes our community special</p>
-      </div>
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="title-font text-6xl font-bold tracking-tight mb-16">Discover P9</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="glass rounded-3xl p-10 hover:scale-105 transition-transform">
-          <i class="fas fa-users text-6xl text-cyan-400 mb-6"></i>
-          <h3 class="text-3xl font-semibold mb-4">Strong Community</h3>
-          <p class="text-zinc-400">Meet passionate people from Capesterre-Belle-Eau and all over Guadeloupe.</p>
+        <div class="glass rounded-3xl p-10 hover:border-cyan-400 transition-all">
+          <i class="fas fa-street-view text-6xl text-cyan-400 mb-6"></i>
+          <h3 class="text-3xl font-bold mb-3">Streetz Community</h3>
+          <p class="text-zinc-400">Real connections from Capesterre to the whole island.</p>
         </div>
-        <div class="glass rounded-3xl p-10 hover:scale-105 transition-transform">
-          <i class="fas fa-calendar-alt text-6xl text-purple-400 mb-6"></i>
-          <h3 class="text-3xl font-semibold mb-4">Exclusive Events</h3>
-          <p class="text-zinc-400">Workshops, parties, networking sessions and more.</p>
+        <div class="glass rounded-3xl p-10 hover:border-cyan-400 transition-all">
+          <i class="fas fa-gamepad text-6xl text-cyan-400 mb-6"></i>
+          <h3 class="text-3xl font-bold mb-3">Events & Vibes</h3>
+          <p class="text-zinc-400">Meetups, sessions, and street energy like Streetz War 2.</p>
         </div>
-        <div class="glass rounded-3xl p-10 hover:scale-105 transition-transform">
-          <i class="fas fa-gem text-6xl text-pink-400 mb-6"></i>
-          <h3 class="text-3xl font-semibold mb-4">Real Benefits</h3>
-          <p class="text-zinc-400">Access to opportunities, resources and special privileges.</p>
+        <div class="glass rounded-3xl p-10 hover:border-cyan-400 transition-all">
+          <i class="fas fa-shield-alt text-6xl text-cyan-400 mb-6"></i>
+          <h3 class="text-3xl font-bold mb-3">Safe Space</h3>
+          <p class="text-zinc-400">Rules respected • Reports handled seriously.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Report Section -->
-  <section id="report" class="py-28 bg-zinc-950">
+  <!-- Report Section - Blue Streetz War 2 Theme -->
+  <section id="report" class="py-28 bg-zinc-950 border-t border-cyan-900">
     <div class="max-w-3xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-5xl font-bold title-font tracking-tight text-rose-400">Report a Member or Staff</h2>
-        <p class="text-zinc-400 mt-4">Confidential • Secure • Taken Seriously</p>
+      <div class="text-center mb-12">
+        <h2 class="title-font text-6xl font-bold tracking-tight text-rose-400">REPORT A MEMBER / STAFF</h2>
+        <p class="text-cyan-400 mt-4 text-xl">Confidential • Streetz Code</p>
       </div>
-      <div class="glass rounded-3xl p-12 border border-rose-500/20">
+      <div class="glass rounded-3xl p-12 border border-rose-500/30">
         <form id="report-form" class="space-y-8">
           <div>
-            <label class="block text-sm text-zinc-400 mb-2">Your Name <span class="text-zinc-500">(optional)</span></label>
-            <input type="text" class="w-full bg-zinc-950 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-rose-400 outline-none">
+            <label class="block text-sm text-zinc-400 mb-2">Your Name (optional)</label>
+            <input type="text" class="w-full bg-zinc-950 border border-cyan-800 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
           </div>
           <div>
-            <label class="block text-sm text-zinc-400 mb-2">Person you are reporting</label>
-            <input type="text" required placeholder="Name or username" class="w-full bg-zinc-950 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-rose-400 outline-none">
+            <label class="block text-sm text-zinc-400 mb-2">Who are you reporting?</label>
+            <input type="text" required placeholder="Member or Staff name" class="w-full bg-zinc-950 border border-cyan-800 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
           </div>
           <div>
             <label class="block text-sm text-zinc-400 mb-2">Reason</label>
-            <select class="w-full bg-zinc-950 border border-zinc-700 rounded-2xl px-6 py-5 focus:border-rose-400 outline-none">
-              <option>Harassment or inappropriate behavior</option>
+            <select class="w-full bg-zinc-950 border border-cyan-800 rounded-2xl px-6 py-5 focus:border-cyan-400 outline-none">
+              <option>Inappropriate behavior / Toxicity</option>
               <option>Breaking community rules</option>
-              <option>Other serious issue</option>
+              <option>Other issue</option>
             </select>
           </div>
           <div>
-            <label class="block text-sm text-zinc-400 mb-2">Detailed Description</label>
-            <textarea rows="7" required class="w-full bg-zinc-950 border border-zinc-700 rounded-3xl px-6 py-5 focus:border-rose-400 outline-none"></textarea>
+            <label class="block text-sm text-zinc-400 mb-2">Tell us what happened (be detailed)</label>
+            <textarea rows="7" required class="w-full bg-zinc-950 border border-cyan-800 rounded-3xl px-6 py-5 focus:border-cyan-400 outline-none"></textarea>
           </div>
-          <button type="submit" class="w-full py-6 bg-rose-600 hover:bg-rose-500 font-bold text-xl rounded-3xl transition">Submit Confidential Report</button>
+          <button type="submit" class="w-full py-7 bg-rose-600 hover:bg-rose-500 font-bold text-2xl rounded-3xl transition">Submit Confidential Report</button>
         </form>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black py-12 text-center text-zinc-500 border-t border-zinc-900">
-    <p class="text-sm">© 2026 P9 Hub — Capesterre-Belle-Eau, Guadeloupe</p>
-    <p class="text-xs mt-2">Built with passion for the community</p>
+  <footer class="bg-black py-12 text-center text-zinc-500">
+    <p>© 2026 P9 Hub • Capesterre-Belle-Eau, Guadeloupe • Inspired by Streetz War 2 energy</p>
   </footer>
 
   <script>
-    // Form handling
+    // Form alerts
     document.querySelectorAll('form').forEach(form => {
-      form.addEventListener('submit', function(e) {
+      form.addEventListener('submit', (e) => {
         e.preventDefault();
-        alert("✅ Thank you! Your submission was received successfully.\n\n(It will be processed shortly)");
+        alert("✅ Submission received! Thank you.");
         form.reset();
       });
     });
 
-    // Smooth scroll for navigation
+    // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
-        if (this.getAttribute('href') !== '#') {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
-        }
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
       });
     });
   </script>
