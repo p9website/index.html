@@ -13,7 +13,11 @@
     .title-font { font-family: 'Space Grotesk', sans-serif; }
     
     .hero-bg {
-      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 60%, #2a1b3d 100%);
+      background-image: linear-gradient(rgba(10, 10, 15, 0.75), rgba(10, 10, 20, 0.85)), 
+                        url('https://media.discordapp.net/attachments/1337980781284561029/1477889768254607380/image.png?ex=69e1bb1a&is=69e0699a&hm=cf2edaed6dfb1c410200001c4b4b6782b6b97c4d2095c84a151f4a9108e2df38&=&format=webp&quality=lossless');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
     
     .modal {
@@ -58,14 +62,14 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero-bg min-h-screen flex items-center pt-20">
+  <!-- Hero Section with your image as background -->
+  <section class="hero-bg min-h-screen flex items-center pt-20 relative">
     <div class="max-w-5xl mx-auto px-6 text-center">
-      <div class="inline-flex items-center gap-3 bg-zinc-900 px-8 py-3 rounded-3xl mb-10 border border-cyan-400/30">
+      <div class="inline-flex items-center gap-3 bg-black/60 px-8 py-3 rounded-3xl mb-10 border border-cyan-400/40">
         <span class="text-cyan-400 font-bold tracking-[3px] text-sm">STREETZ WAR 2 • ROBLOX HOOD GANG</span>
       </div>
 
-      <h1 class="title-font text-7xl md:text-8xl font-black tracking-tighter leading-none mb-6">
+      <h1 class="title-font text-7xl md:text-8xl font-black tracking-tighter leading-none mb-6 text-white">
         P9 HOOD
       </h1>
       
@@ -73,14 +77,14 @@
         Owner: Len Kossdi Kozay
       </p>
 
-      <p class="text-2xl text-zinc-400 max-w-2xl mx-auto mb-16">
+      <p class="text-2xl text-zinc-200 max-w-2xl mx-auto mb-16 drop-shadow-lg">
         The realest hood gang in Streetz War 2.<br>
         Loyalty • Respect • Streetz Energy
       </p>
 
       <div class="flex flex-col sm:flex-row gap-6 justify-center">
         <button onclick="showModal('en')" 
-                class="px-16 py-7 bg-gradient-to-r from-cyan-400 to-cyan-500 text-black font-bold text-2xl rounded-3xl hover:scale-105 transition-all shadow-2xl shadow-cyan-500/40">
+                class="px-16 py-7 bg-gradient-to-r from-cyan-400 to-cyan-500 text-black font-bold text-2xl rounded-3xl hover:scale-105 transition-all shadow-2xl shadow-cyan-500/50">
           Join P9 - English
         </button>
         
@@ -92,7 +96,7 @@
     </div>
   </section>
 
-  <!-- Modals -->
+  <!-- Modals (same as before) -->
   <div id="modal" class="hidden fixed inset-0 bg-black/90 flex items-center justify-center z-[100] p-4">
     <div id="modal-content" class="glass w-full max-w-2xl rounded-3xl p-10 md:p-14 relative max-h-[92vh] overflow-auto">
       <button onclick="closeModal()" class="absolute top-6 right-6 text-4xl text-zinc-400 hover:text-white transition">×</button>
